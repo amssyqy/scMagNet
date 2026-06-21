@@ -12,18 +12,48 @@ Single‑cell RNA‑seq (scRNA‑seq) captures gene expression at high resolutio
 - Predicting unmeasured gene expression in spatial data  
 - Integrating multiple datasets across technologies
 
-## Dependencies and Environment
+### ️ Environment Setup
 
-We recommend using Conda. The provided `environment.yml` lists the packages required.
+Follow the steps below to set up the environment for `scMagNet`.
 
-Create and activate the environment:
+#### 1. Create and Activate the Conda Environment
+
+First, create a new Conda environment named `scMagNet` with Python 3.10, and then activate it:
 
 ```bash
-conda env create -f environment.yml
-conda activate GPU
+conda create --name scMagNet python=3.10
+conda activate scMagNet
 ```
 
-Note: `environment.yml` contains GPU-specific PyTorch versions. If you do not have a CUDA-enabled GPU, replace `torch` with a CPU build compatible with your platform.
+#### 2. Install PyTorch
+
+Next, install PyTorch compatible with your CUDA version.
+
+1. Visit the [PyTorch official installation page](https://pytorch.org/get-started/locally/).
+2. Select the appropriate installation command based on your system and CUDA version.
+3. For example, to install with CUDA 12.6, run:
+
+```bash
+pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu126
+```
+
+#### 3. Verify the Installation
+
+After installation, run the following Python code to verify that PyTorch is installed correctly and that your GPU is available:
+
+```python
+import torch 
+print(torch.__version__) 
+print(torch.cuda.is_available())  # Returns True if CUDA is installed and GPU is available
+```
+
+#### 4. Install Remaining Dependencies
+
+Finally, install the rest of the project dependencies using the provided `environment.yml` file:
+
+```bash
+conda env update -f environment.yml
+```
 
 ## Preparing Input Data
 
