@@ -1,0 +1,33 @@
+CytoSPACE log file 
+
+Start time: Mon Sep  7 23:03:27 2026
+
+INPUT ARGUMENTS
+scRNA_path: sc_expression.tsv
+cell_type_path: cell_type_labels.tsv
+st_path: st_expression.tsv
+coordinates_path: spatial_coords.tsv
+n_cells_per_spot_path: None
+cell_type_fraction_estimation_path: None
+st_cell_type_path: None
+output_folder: cytospace_results
+mean_cell_numbers: 5
+downsample_off: False
+scRNA_max_transcripts_per_cell: 1500
+plot_off: False
+geometry: honeycomb
+output_prefix: 
+seed: 1
+solver_method: lap_CSPR
+sampling_method: duplicates
+distance_metric: Pearson_correlation
+single_cell: False
+
+sampling_sub_spots: False
+
+Time to read and validate data: 18.49 seconds
+Number of genes used for mapping: 254
+Number of spots satisfying input for mapping: 424
+Number of cells satisfying input for mapping: 4198
+Time to run CytoSPACE core algorithm: 2.43 seconds
+Total execution time: 42.11 seconds
