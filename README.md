@@ -68,6 +68,23 @@ The main script expects these files in the repository root (or update the paths 
 
 Some datasets are too large to include, you can find them here: https://drive.google.com/drive/folders/1Vf8iVi29hQqXOYWpDYSgmuAbWvS5l6XL?usp=sharing, place them in a `data/` directory and modify the paths in `JointEmbedding4.py`.
 
+```python
+adata_RNA
+```
+
+<div style="text-align: right">
+  <img src="adata_RNA.png" alt="Image" width="500">
+</div>
+
+```python
+adata_ATAC
+```
+
+<div style="text-align: right">
+  <img src="adata_ATAC.png" alt="Image" width="500">
+</div>
+
+
 ## How to Run
 Run the primary experiment with:
 
