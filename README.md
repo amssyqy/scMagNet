@@ -78,7 +78,7 @@ conda env update -f environment.yml
 
 ## 📂 Input Data Format
 
-The current merged script (e.g. `scMagNet_F2.ipynb`) expects the following files. **Paths are hard-coded in the script by default**; update them to your local paths if needed.
+The current merged script (e.g. `scMagNet-Example.ipynb`) expects the following files. **Paths are hard-coded in the script by default**; update them to your local paths if needed.
 
 ### Current example data (`dataGithub/`)
 
